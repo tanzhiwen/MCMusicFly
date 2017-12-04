@@ -18,6 +18,9 @@
 		639A9FCB1FD56D170007C156 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FCA1FD56D170007C156 /* BaseViewController.m */; };
 		639A9FCE1FD56E110007C156 /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FCD1FD56E110007C156 /* BaseNavViewController.m */; };
 		639A9FD11FD57BC80007C156 /* ScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FD01FD57BC70007C156 /* ScreenShotView.m */; };
+		639A9FD41FD586EF0007C156 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FD31FD586EF0007C156 /* DataManager.m */; };
+		639A9FD71FD589A20007C156 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FD61FD589A20007C156 /* VideoModel.m */; };
+		639A9FDA1FD589FB0007C156 /* SidModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FD91FD589FB0007C156 /* SidModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,12 @@
 		639A9FCD1FD56E110007C156 /* BaseNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavViewController.m; sourceTree = "<group>"; };
 		639A9FCF1FD57BC70007C156 /* ScreenShotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotView.h; sourceTree = "<group>"; };
 		639A9FD01FD57BC70007C156 /* ScreenShotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotView.m; sourceTree = "<group>"; };
+		639A9FD21FD586EF0007C156 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		639A9FD31FD586EF0007C156 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		639A9FD51FD589A20007C156 /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		639A9FD61FD589A20007C156 /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		639A9FD81FD589FB0007C156 /* SidModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SidModel.h; sourceTree = "<group>"; };
+		639A9FD91FD589FB0007C156 /* SidModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SidModel.m; sourceTree = "<group>"; };
 		6D02C98D3A5A6FD407172A51 /* libPods-McMusicFly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-McMusicFly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		723AD233158DFC5CD5E3E8C2 /* Pods-McMusicFly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McMusicFly.release.xcconfig"; path = "Pods/Target Support Files/Pods-McMusicFly/Pods-McMusicFly.release.xcconfig"; sourceTree = "<group>"; };
 		AD766738BB4F80BA5620ED91 /* Pods-McMusicFly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McMusicFly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-McMusicFly/Pods-McMusicFly.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +185,8 @@
 		639A9FB91FD566DB0007C156 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				639A9FD21FD586EF0007C156 /* DataManager.h */,
+				639A9FD31FD586EF0007C156 /* DataManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -232,6 +243,10 @@
 		639A9FC11FD566DB0007C156 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				639A9FD51FD589A20007C156 /* VideoModel.h */,
+				639A9FD61FD589A20007C156 /* VideoModel.m */,
+				639A9FD81FD589FB0007C156 /* SidModel.h */,
+				639A9FD91FD589FB0007C156 /* SidModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -439,12 +454,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639A9FDA1FD589FB0007C156 /* SidModel.m in Sources */,
 				639A9FC41FD566DB0007C156 /* AppDelegate.m in Sources */,
 				639A9FCB1FD56D170007C156 /* BaseViewController.m in Sources */,
+				639A9FD41FD586EF0007C156 /* DataManager.m in Sources */,
 				639A9FCE1FD56E110007C156 /* BaseNavViewController.m in Sources */,
 				639A9F961FD555E20007C156 /* main.m in Sources */,
 				639A9FD11FD57BC80007C156 /* ScreenShotView.m in Sources */,
 				639A9FC81FD568560007C156 /* UIViewController+GestureStateBlock.m in Sources */,
+				639A9FD71FD589A20007C156 /* VideoModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
