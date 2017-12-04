@@ -14,6 +14,10 @@
 		639A9FA01FD555E20007C156 /* McMusicFlyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9F9F1FD555E20007C156 /* McMusicFlyTests.m */; };
 		639A9FAB1FD555E20007C156 /* McMusicFlyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FAA1FD555E20007C156 /* McMusicFlyUITests.m */; };
 		639A9FC41FD566DB0007C156 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FBF1FD566DB0007C156 /* AppDelegate.m */; };
+		639A9FC81FD568560007C156 /* UIViewController+GestureStateBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FC71FD568560007C156 /* UIViewController+GestureStateBlock.m */; };
+		639A9FCB1FD56D170007C156 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FCA1FD56D170007C156 /* BaseViewController.m */; };
+		639A9FCE1FD56E110007C156 /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FCD1FD56E110007C156 /* BaseNavViewController.m */; };
+		639A9FD11FD57BC80007C156 /* ScreenShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FD01FD57BC70007C156 /* ScreenShotView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,14 @@
 		639A9FBE1FD566DB0007C156 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		639A9FBF1FD566DB0007C156 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		639A9FC51FD566F60007C156 /* Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		639A9FC61FD568560007C156 /* UIViewController+GestureStateBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GestureStateBlock.h"; sourceTree = "<group>"; };
+		639A9FC71FD568560007C156 /* UIViewController+GestureStateBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GestureStateBlock.m"; sourceTree = "<group>"; };
+		639A9FC91FD56D170007C156 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		639A9FCA1FD56D170007C156 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		639A9FCC1FD56E110007C156 /* BaseNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavViewController.h; sourceTree = "<group>"; };
+		639A9FCD1FD56E110007C156 /* BaseNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavViewController.m; sourceTree = "<group>"; };
+		639A9FCF1FD57BC70007C156 /* ScreenShotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenShotView.h; sourceTree = "<group>"; };
+		639A9FD01FD57BC70007C156 /* ScreenShotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenShotView.m; sourceTree = "<group>"; };
 		6D02C98D3A5A6FD407172A51 /* libPods-McMusicFly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-McMusicFly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		723AD233158DFC5CD5E3E8C2 /* Pods-McMusicFly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McMusicFly.release.xcconfig"; path = "Pods/Target Support Files/Pods-McMusicFly/Pods-McMusicFly.release.xcconfig"; sourceTree = "<group>"; };
 		AD766738BB4F80BA5620ED91 /* Pods-McMusicFly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McMusicFly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-McMusicFly/Pods-McMusicFly.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +183,10 @@
 		639A9FBA1FD566DB0007C156 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				639A9FC91FD56D170007C156 /* BaseViewController.h */,
+				639A9FCA1FD56D170007C156 /* BaseViewController.m */,
+				639A9FCC1FD56E110007C156 /* BaseNavViewController.h */,
+				639A9FCD1FD56E110007C156 /* BaseNavViewController.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -185,6 +201,10 @@
 		639A9FBC1FD566DB0007C156 /* Extesion */ = {
 			isa = PBXGroup;
 			children = (
+				639A9FCF1FD57BC70007C156 /* ScreenShotView.h */,
+				639A9FD01FD57BC70007C156 /* ScreenShotView.m */,
+				639A9FC61FD568560007C156 /* UIViewController+GestureStateBlock.h */,
+				639A9FC71FD568560007C156 /* UIViewController+GestureStateBlock.m */,
 			);
 			path = Extesion;
 			sourceTree = "<group>";
@@ -400,9 +420,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-McMusicFly/Pods-McMusicFly-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -417,7 +440,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				639A9FC41FD566DB0007C156 /* AppDelegate.m in Sources */,
+				639A9FCB1FD56D170007C156 /* BaseViewController.m in Sources */,
+				639A9FCE1FD56E110007C156 /* BaseNavViewController.m in Sources */,
 				639A9F961FD555E20007C156 /* main.m in Sources */,
+				639A9FD11FD57BC80007C156 /* ScreenShotView.m in Sources */,
+				639A9FC81FD568560007C156 /* UIViewController+GestureStateBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

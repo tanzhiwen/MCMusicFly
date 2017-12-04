@@ -4,5 +4,7 @@ target "McMusicFly" do
 pod "Masonry"
 pod "AFNetworking"
 pod "SDWebImage"
+pod "MBProgressHUD"
+pod "MJRefresh"
 
 end
