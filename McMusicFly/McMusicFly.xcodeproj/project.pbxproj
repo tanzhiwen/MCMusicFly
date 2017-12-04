@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2798EC9853139C8B23D0A37E /* libPods-McMusicFly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D02C98D3A5A6FD407172A51 /* libPods-McMusicFly.a */; };
-		639A9F881FD555E20007C156 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9F871FD555E20007C156 /* AppDelegate.m */; };
 		639A9F8E1FD555E20007C156 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639A9F8C1FD555E20007C156 /* Main.storyboard */; };
 		639A9F901FD555E20007C156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639A9F8F1FD555E20007C156 /* Assets.xcassets */; };
 		639A9F931FD555E20007C156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639A9F911FD555E20007C156 /* LaunchScreen.storyboard */; };
 		639A9F961FD555E20007C156 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9F951FD555E20007C156 /* main.m */; };
 		639A9FA01FD555E20007C156 /* McMusicFlyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9F9F1FD555E20007C156 /* McMusicFlyTests.m */; };
 		639A9FAB1FD555E20007C156 /* McMusicFlyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FAA1FD555E20007C156 /* McMusicFlyUITests.m */; };
+		639A9FC41FD566DB0007C156 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FBF1FD566DB0007C156 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,6 @@
 
 /* Begin PBXFileReference section */
 		639A9F831FD555E20007C156 /* McMusicFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = McMusicFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		639A9F861FD555E20007C156 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		639A9F871FD555E20007C156 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		639A9F8D1FD555E20007C156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		639A9F8F1FD555E20007C156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639A9F921FD555E20007C156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +47,9 @@
 		639A9FA61FD555E20007C156 /* McMusicFlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = McMusicFlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		639A9FAA1FD555E20007C156 /* McMusicFlyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = McMusicFlyUITests.m; sourceTree = "<group>"; };
 		639A9FAC1FD555E20007C156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		639A9FBE1FD566DB0007C156 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		639A9FBF1FD566DB0007C156 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		639A9FC51FD566F60007C156 /* Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		6D02C98D3A5A6FD407172A51 /* libPods-McMusicFly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-McMusicFly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		723AD233158DFC5CD5E3E8C2 /* Pods-McMusicFly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McMusicFly.release.xcconfig"; path = "Pods/Target Support Files/Pods-McMusicFly/Pods-McMusicFly.release.xcconfig"; sourceTree = "<group>"; };
 		AD766738BB4F80BA5620ED91 /* Pods-McMusicFly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McMusicFly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-McMusicFly/Pods-McMusicFly.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,13 +123,18 @@
 		639A9F851FD555E20007C156 /* McMusicFly */ = {
 			isa = PBXGroup;
 			children = (
-				639A9F861FD555E20007C156 /* AppDelegate.h */,
-				639A9F871FD555E20007C156 /* AppDelegate.m */,
+				639A9FBA1FD566DB0007C156 /* BaseClass */,
+				639A9FBC1FD566DB0007C156 /* Extesion */,
+				639A9FBD1FD566DB0007C156 /* Main */,
+				639A9FBB1FD566DB0007C156 /* Resource */,
+				639A9FB81FD566DB0007C156 /* SDK */,
+				639A9FB91FD566DB0007C156 /* Tool */,
 				639A9F8C1FD555E20007C156 /* Main.storyboard */,
 				639A9F8F1FD555E20007C156 /* Assets.xcassets */,
 				639A9F911FD555E20007C156 /* LaunchScreen.storyboard */,
 				639A9F941FD555E20007C156 /* Info.plist */,
 				639A9F951FD555E20007C156 /* main.m */,
+				639A9FC51FD566F60007C156 /* Configuration.h */,
 			);
 			path = McMusicFly;
 			sourceTree = "<group>";
@@ -149,6 +155,82 @@
 				639A9FAC1FD555E20007C156 /* Info.plist */,
 			);
 			path = McMusicFlyUITests;
+			sourceTree = "<group>";
+		};
+		639A9FB81FD566DB0007C156 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		639A9FB91FD566DB0007C156 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		639A9FBA1FD566DB0007C156 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		639A9FBB1FD566DB0007C156 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		639A9FBC1FD566DB0007C156 /* Extesion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extesion;
+			sourceTree = "<group>";
+		};
+		639A9FBD1FD566DB0007C156 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				639A9FBE1FD566DB0007C156 /* AppDelegate.h */,
+				639A9FBF1FD566DB0007C156 /* AppDelegate.m */,
+				639A9FC01FD566DB0007C156 /* Controller */,
+				639A9FC11FD566DB0007C156 /* Model */,
+				639A9FC21FD566DB0007C156 /* View */,
+				639A9FC31FD566DB0007C156 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		639A9FC01FD566DB0007C156 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		639A9FC11FD566DB0007C156 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		639A9FC21FD566DB0007C156 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		639A9FC31FD566DB0007C156 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,8 +420,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639A9FC41FD566DB0007C156 /* AppDelegate.m in Sources */,
 				639A9F961FD555E20007C156 /* main.m in Sources */,
-				639A9F881FD555E20007C156 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
