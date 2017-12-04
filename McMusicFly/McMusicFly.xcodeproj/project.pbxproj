@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2798EC9853139C8B23D0A37E /* libPods-McMusicFly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D02C98D3A5A6FD407172A51 /* libPods-McMusicFly.a */; };
 		639A9F881FD555E20007C156 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9F871FD555E20007C156 /* AppDelegate.m */; };
 		639A9F8B1FD555E20007C156 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9F8A1FD555E20007C156 /* ViewController.m */; };
 		639A9F8E1FD555E20007C156 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639A9F8C1FD555E20007C156 /* Main.storyboard */; };
@@ -51,6 +52,9 @@
 		639A9FA61FD555E20007C156 /* McMusicFlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = McMusicFlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		639A9FAA1FD555E20007C156 /* McMusicFlyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = McMusicFlyUITests.m; sourceTree = "<group>"; };
 		639A9FAC1FD555E20007C156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D02C98D3A5A6FD407172A51 /* libPods-McMusicFly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-McMusicFly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		723AD233158DFC5CD5E3E8C2 /* Pods-McMusicFly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McMusicFly.release.xcconfig"; path = "Pods/Target Support Files/Pods-McMusicFly/Pods-McMusicFly.release.xcconfig"; sourceTree = "<group>"; };
+		AD766738BB4F80BA5620ED91 /* Pods-McMusicFly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McMusicFly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-McMusicFly/Pods-McMusicFly.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2798EC9853139C8B23D0A37E /* libPods-McMusicFly.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29C09DD4F8F37762233F3FD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD766738BB4F80BA5620ED91 /* Pods-McMusicFly.debug.xcconfig */,
+				723AD233158DFC5CD5E3E8C2 /* Pods-McMusicFly.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2D559EBE9C118D99F60F799D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D02C98D3A5A6FD407172A51 /* libPods-McMusicFly.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		639A9F7A1FD555E20007C156 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				639A9F9E1FD555E20007C156 /* McMusicFlyTests */,
 				639A9FA91FD555E20007C156 /* McMusicFlyUITests */,
 				639A9F841FD555E20007C156 /* Products */,
+				29C09DD4F8F37762233F3FD5 /* Pods */,
+				2D559EBE9C118D99F60F799D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 639A9FAF1FD555E20007C156 /* Build configuration list for PBXNativeTarget "McMusicFly" */;
 			buildPhases = (
+				62F4A04BC67E7ADC4C8069C1 /* [CP] Check Pods Manifest.lock */,
 				639A9F7F1FD555E20007C156 /* Sources */,
 				639A9F801FD555E20007C156 /* Frameworks */,
 				639A9F811FD555E20007C156 /* Resources */,
+				42EACDCC1FB58A205A012368 /* [CP] Embed Pods Frameworks */,
+				EAD56092162B8C5866E58F40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42EACDCC1FB58A205A012368 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-McMusicFly/Pods-McMusicFly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62F4A04BC67E7ADC4C8069C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-McMusicFly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAD56092162B8C5866E58F40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-McMusicFly/Pods-McMusicFly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		639A9F7F1FD555E20007C156 /* Sources */ = {
@@ -428,6 +506,7 @@
 		};
 		639A9FB01FD555E20007C156 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD766738BB4F80BA5620ED91 /* Pods-McMusicFly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +521,7 @@
 		};
 		639A9FB11FD555E20007C156 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 723AD233158DFC5CD5E3E8C2 /* Pods-McMusicFly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
