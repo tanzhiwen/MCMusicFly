@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2798EC9853139C8B23D0A37E /* libPods-McMusicFly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D02C98D3A5A6FD407172A51 /* libPods-McMusicFly.a */; };
-		639A9F8E1FD555E20007C156 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639A9F8C1FD555E20007C156 /* Main.storyboard */; };
 		639A9F901FD555E20007C156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639A9F8F1FD555E20007C156 /* Assets.xcassets */; };
 		639A9F931FD555E20007C156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639A9F911FD555E20007C156 /* LaunchScreen.storyboard */; };
 		639A9F961FD555E20007C156 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9F951FD555E20007C156 /* main.m */; };
@@ -36,7 +35,6 @@
 
 /* Begin PBXFileReference section */
 		639A9F831FD555E20007C156 /* McMusicFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = McMusicFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		639A9F8D1FD555E20007C156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		639A9F8F1FD555E20007C156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639A9F921FD555E20007C156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		639A9F941FD555E20007C156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 				639A9FBB1FD566DB0007C156 /* Resource */,
 				639A9FB81FD566DB0007C156 /* SDK */,
 				639A9FB91FD566DB0007C156 /* Tool */,
-				639A9F8C1FD555E20007C156 /* Main.storyboard */,
 				639A9F8F1FD555E20007C156 /* Assets.xcassets */,
 				639A9F911FD555E20007C156 /* LaunchScreen.storyboard */,
 				639A9F941FD555E20007C156 /* Info.plist */,
@@ -344,7 +341,6 @@
 			files = (
 				639A9F931FD555E20007C156 /* LaunchScreen.storyboard in Resources */,
 				639A9F901FD555E20007C156 /* Assets.xcassets in Resources */,
-				639A9F8E1FD555E20007C156 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,14 +453,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		639A9F8C1FD555E20007C156 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				639A9F8D1FD555E20007C156 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		639A9F911FD555E20007C156 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
