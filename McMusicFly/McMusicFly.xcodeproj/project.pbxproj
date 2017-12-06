@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2798EC9853139C8B23D0A37E /* libPods-McMusicFly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D02C98D3A5A6FD407172A51 /* libPods-McMusicFly.a */; };
+		6396AC601FD79A40001206A1 /* TencentNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396AC5F1FD79A40001206A1 /* TencentNewsViewController.m */; };
+		6396AC641FD7A4AF001206A1 /* SinaNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396AC631FD7A4AF001206A1 /* SinaNewsViewController.m */; };
 		639A9F901FD555E20007C156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639A9F8F1FD555E20007C156 /* Assets.xcassets */; };
 		639A9F931FD555E20007C156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639A9F911FD555E20007C156 /* LaunchScreen.storyboard */; };
 		639A9F961FD555E20007C156 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9F951FD555E20007C156 /* main.m */; };
@@ -21,6 +23,8 @@
 		639A9FD41FD586EF0007C156 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FD31FD586EF0007C156 /* DataManager.m */; };
 		639A9FD71FD589A20007C156 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FD61FD589A20007C156 /* VideoModel.m */; };
 		639A9FDA1FD589FB0007C156 /* SidModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FD91FD589FB0007C156 /* SidModel.m */; };
+		639A9FDD1FD5908E0007C156 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9FDC1FD5908E0007C156 /* RootTabBarController.m */; };
+		639A9FDF1FD594E00007C156 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639A9FDE1FD594E00007C156 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6396AC5E1FD79A40001206A1 /* TencentNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TencentNewsViewController.h; sourceTree = "<group>"; };
+		6396AC5F1FD79A40001206A1 /* TencentNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TencentNewsViewController.m; sourceTree = "<group>"; };
+		6396AC621FD7A4AF001206A1 /* SinaNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinaNewsViewController.h; sourceTree = "<group>"; };
+		6396AC631FD7A4AF001206A1 /* SinaNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinaNewsViewController.m; sourceTree = "<group>"; };
 		639A9F831FD555E20007C156 /* McMusicFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = McMusicFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639A9F8F1FD555E20007C156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639A9F921FD555E20007C156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,6 +77,9 @@
 		639A9FD61FD589A20007C156 /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
 		639A9FD81FD589FB0007C156 /* SidModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SidModel.h; sourceTree = "<group>"; };
 		639A9FD91FD589FB0007C156 /* SidModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SidModel.m; sourceTree = "<group>"; };
+		639A9FDB1FD5908E0007C156 /* RootTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootTabBarController.h; sourceTree = "<group>"; };
+		639A9FDC1FD5908E0007C156 /* RootTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
+		639A9FDE1FD594E00007C156 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6D02C98D3A5A6FD407172A51 /* libPods-McMusicFly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-McMusicFly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		723AD233158DFC5CD5E3E8C2 /* Pods-McMusicFly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McMusicFly.release.xcconfig"; path = "Pods/Target Support Files/Pods-McMusicFly/Pods-McMusicFly.release.xcconfig"; sourceTree = "<group>"; };
 		AD766738BB4F80BA5620ED91 /* Pods-McMusicFly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-McMusicFly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-McMusicFly/Pods-McMusicFly.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +164,7 @@
 				639A9F941FD555E20007C156 /* Info.plist */,
 				639A9F951FD555E20007C156 /* main.m */,
 				639A9FC51FD566F60007C156 /* Configuration.h */,
+				639A9FDE1FD594E00007C156 /* Main.storyboard */,
 			);
 			path = McMusicFly;
 			sourceTree = "<group>";
@@ -198,6 +210,8 @@
 				639A9FCA1FD56D170007C156 /* BaseViewController.m */,
 				639A9FCC1FD56E110007C156 /* BaseNavViewController.h */,
 				639A9FCD1FD56E110007C156 /* BaseNavViewController.m */,
+				639A9FDB1FD5908E0007C156 /* RootTabBarController.h */,
+				639A9FDC1FD5908E0007C156 /* RootTabBarController.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -236,6 +250,10 @@
 		639A9FC01FD566DB0007C156 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6396AC5E1FD79A40001206A1 /* TencentNewsViewController.h */,
+				6396AC5F1FD79A40001206A1 /* TencentNewsViewController.m */,
+				6396AC621FD7A4AF001206A1 /* SinaNewsViewController.h */,
+				6396AC631FD7A4AF001206A1 /* SinaNewsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -374,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				639A9FDF1FD594E00007C156 /* Main.storyboard in Resources */,
 				639A9F931FD555E20007C156 /* LaunchScreen.storyboard in Resources */,
 				639A9F901FD555E20007C156 /* Assets.xcassets in Resources */,
 			);
@@ -455,6 +474,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				639A9FDA1FD589FB0007C156 /* SidModel.m in Sources */,
+				639A9FDD1FD5908E0007C156 /* RootTabBarController.m in Sources */,
+				6396AC641FD7A4AF001206A1 /* SinaNewsViewController.m in Sources */,
 				639A9FC41FD566DB0007C156 /* AppDelegate.m in Sources */,
 				639A9FCB1FD56D170007C156 /* BaseViewController.m in Sources */,
 				639A9FD41FD586EF0007C156 /* DataManager.m in Sources */,
@@ -463,6 +484,7 @@
 				639A9FD11FD57BC80007C156 /* ScreenShotView.m in Sources */,
 				639A9FC81FD568560007C156 /* UIViewController+GestureStateBlock.m in Sources */,
 				639A9FD71FD589A20007C156 /* VideoModel.m in Sources */,
+				6396AC601FD79A40001206A1 /* TencentNewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

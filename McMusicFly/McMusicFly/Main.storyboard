@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GCL-TM-pq0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--新浪-->
+        <scene sceneID="rK6-WY-Cij">
+            <objects>
+                <navigationController id="akb-Pi-KlR" customClass="BaseNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="新浪" image="found" selectedImage="found_s" id="Alt-cW-fRa"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DQL-4B-fUO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Zh1-AH-3Jb" kind="relationship" relationship="rootViewController" id="X3r-gD-Qg0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSQ-uR-dIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-722" y="-27"/>
+        </scene>
+        <!--新浪视频-->
+        <scene sceneID="nZd-tl-fAk">
+            <objects>
+                <viewController id="Zh1-AH-3Jb" customClass="SinaNewsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pxn-ro-lxa"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Tg-UM-3Gc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BfT-SD-iLh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UUp-gv-Auy">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Tg-UM-3Gc" firstAttribute="top" secondItem="UUp-gv-Auy" secondAttribute="bottom" id="8P4-VV-BSQ"/>
+                            <constraint firstAttribute="trailing" secondItem="UUp-gv-Auy" secondAttribute="trailing" id="Zkc-PE-wfi"/>
+                            <constraint firstItem="UUp-gv-Auy" firstAttribute="leading" secondItem="BfT-SD-iLh" secondAttribute="leading" id="dxB-Yb-BjR"/>
+                            <constraint firstItem="UUp-gv-Auy" firstAttribute="top" secondItem="Pxn-ro-lxa" secondAttribute="bottom" id="hph-MN-M1a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="新浪视频" id="KJq-rr-oTV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gtW-bk-khI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="-30"/>
+        </scene>
+        <!--腾讯-->
+        <scene sceneID="8lJ-bo-kCZ">
+            <objects>
+                <navigationController id="4Y8-Zs-VbN" customClass="BaseNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="腾讯" image="message" selectedImage="message_s" id="oe2-DW-Oni"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pAr-yp-8ha">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ezl-IC-5up" kind="relationship" relationship="rootViewController" id="y89-zu-bYj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gk-fU-Mch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-721" y="-753"/>
+        </scene>
+        <!--腾讯视频-->
+        <scene sceneID="J5P-0O-NqG">
+            <objects>
+                <viewController id="ezl-IC-5up" customClass="TencentNewsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XjE-9X-H03"/>
+                        <viewControllerLayoutGuide type="bottom" id="clw-zv-Dy1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SSv-eX-cbU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xdR-c2-bMX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xdR-c2-bMX" firstAttribute="leading" secondItem="SSv-eX-cbU" secondAttribute="leading" id="2PA-R5-iRo"/>
+                            <constraint firstItem="clw-zv-Dy1" firstAttribute="top" secondItem="xdR-c2-bMX" secondAttribute="bottom" id="G87-o7-6yZ"/>
+                            <constraint firstItem="xdR-c2-bMX" firstAttribute="top" secondItem="XjE-9X-H03" secondAttribute="bottom" id="Lfk-72-fqK"/>
+                            <constraint firstAttribute="trailing" secondItem="xdR-c2-bMX" secondAttribute="trailing" id="kWw-eT-qqo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="腾讯视频" id="ZA5-13-gS4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Age-x6-iBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="-745"/>
+        </scene>
+        <!--Root Tab Bar Controller-->
+        <scene sceneID="hEJ-Ug-wkg">
+            <objects>
+                <tabBarController id="GCL-TM-pq0" customClass="RootTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NfJ-fe-UCc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4Y8-Zs-VbN" kind="relationship" relationship="viewControllers" id="kNO-Oo-50M"/>
+                        <segue destination="akb-Pi-KlR" kind="relationship" relationship="viewControllers" id="9kd-zz-GIV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z6c-0x-eBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1658" y="-552"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="found" width="29" height="22"/>
+        <image name="found_s" width="29" height="22"/>
+        <image name="message" width="29" height="22"/>
+        <image name="message_s" width="29" height="22"/>
+    </resources>
+</document>

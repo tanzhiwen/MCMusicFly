@@ -18,4 +18,7 @@ typedef void (^onFailed)(NSError *error);
 
 +(DataManager *)dataManager;
 
+-(void)getSidArrayWithUrlString:(NSString *)urlString success:(onSuccess)success failed:(onFailed)failed;
+
+-(void)getVideoArrayWithUrlString:(NSString *)urlString ListID:(NSString *)listId success:(onSuccess)success failed:(onFailed)failed;
 @end

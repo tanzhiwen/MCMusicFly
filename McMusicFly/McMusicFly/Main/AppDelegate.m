@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "DataManager.h"
+
 @interface AppDelegate ()
 
 @end
@@ -22,8 +24,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[DataManager dataManager]getSidArrayWithUrlString:@"http://c.m.163.com/nc/video/home/0-10.html" success:^(NSArray *sidArray, NSArray *videoArray) {
+        self.sidArray =[NSArray arrayWithArray:sidArray];
+        self.videoArray = [NSArray arrayWithArray:videoArray];
+    } failed:^(NSError *error) {
+        
+    }];
+     
+    //截图返回，地址为https://github.com/zhengwenming/ScreenShotBack
+    self.screenshotView = [[ScreenShotView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, self.window.frame.size.height)];
+    [self.window insertSubview:self.screenshotView atIndex:0];
+    self.screenshotView.hidden = YES;
     
-    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
