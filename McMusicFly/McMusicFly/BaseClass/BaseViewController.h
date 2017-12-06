@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIViewController+GestureStateBlock.h"
+#import <MBProgressHUD.h>
 
 /**
  用了自定义的手势返回，则系统的手势返回屏蔽

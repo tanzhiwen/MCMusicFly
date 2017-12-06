@@ -7,7 +7,10 @@
 //
 
 #import "BaseViewController.h"
+#import <UIKit/UIKit.h>
 
 @interface TencentNewsViewController : BaseViewController
+
+@property (nonatomic,weak) IBOutlet UITableView *tbViiew;
 
 @end

@@ -10,6 +10,11 @@
 		2798EC9853139C8B23D0A37E /* libPods-McMusicFly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D02C98D3A5A6FD407172A51 /* libPods-McMusicFly.a */; };
 		6396AC601FD79A40001206A1 /* TencentNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396AC5F1FD79A40001206A1 /* TencentNewsViewController.m */; };
 		6396AC641FD7A4AF001206A1 /* SinaNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396AC631FD7A4AF001206A1 /* SinaNewsViewController.m */; };
+		6396AC681FD7CB1E001206A1 /* videoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396AC661FD7CB1E001206A1 /* videoCell.m */; };
+		6396AC691FD7CB1E001206A1 /* videoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396AC671FD7CB1E001206A1 /* videoCell.xib */; };
+		6396AC6D1FD7E714001206A1 /* WMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396AC6C1FD7E714001206A1 /* WMPlayer.m */; };
+		6396AC711FD7F1D4001206A1 /* FastForwardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396AC6E1FD7F1D3001206A1 /* FastForwardView.m */; };
+		6396AC721FD7F1D4001206A1 /* FastForwardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396AC6F1FD7F1D4001206A1 /* FastForwardView.xib */; };
 		639A9F901FD555E20007C156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639A9F8F1FD555E20007C156 /* Assets.xcassets */; };
 		639A9F931FD555E20007C156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639A9F911FD555E20007C156 /* LaunchScreen.storyboard */; };
 		639A9F961FD555E20007C156 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 639A9F951FD555E20007C156 /* main.m */; };
@@ -49,6 +54,14 @@
 		6396AC5F1FD79A40001206A1 /* TencentNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TencentNewsViewController.m; sourceTree = "<group>"; };
 		6396AC621FD7A4AF001206A1 /* SinaNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinaNewsViewController.h; sourceTree = "<group>"; };
 		6396AC631FD7A4AF001206A1 /* SinaNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinaNewsViewController.m; sourceTree = "<group>"; };
+		6396AC651FD7CB1E001206A1 /* videoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = videoCell.h; sourceTree = "<group>"; };
+		6396AC661FD7CB1E001206A1 /* videoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = videoCell.m; sourceTree = "<group>"; };
+		6396AC671FD7CB1E001206A1 /* videoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = videoCell.xib; sourceTree = "<group>"; };
+		6396AC6B1FD7E714001206A1 /* WMPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMPlayer.h; sourceTree = "<group>"; };
+		6396AC6C1FD7E714001206A1 /* WMPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMPlayer.m; sourceTree = "<group>"; };
+		6396AC6E1FD7F1D3001206A1 /* FastForwardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastForwardView.m; sourceTree = "<group>"; };
+		6396AC6F1FD7F1D4001206A1 /* FastForwardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FastForwardView.xib; sourceTree = "<group>"; };
+		6396AC701FD7F1D4001206A1 /* FastForwardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastForwardView.h; sourceTree = "<group>"; };
 		639A9F831FD555E20007C156 /* McMusicFly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = McMusicFly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639A9F8F1FD555E20007C156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639A9F921FD555E20007C156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -126,6 +139,18 @@
 				6D02C98D3A5A6FD407172A51 /* libPods-McMusicFly.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6396AC6A1FD7E6FB001206A1 /* WMPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				6396AC701FD7F1D4001206A1 /* FastForwardView.h */,
+				6396AC6E1FD7F1D3001206A1 /* FastForwardView.m */,
+				6396AC6F1FD7F1D4001206A1 /* FastForwardView.xib */,
+				6396AC6B1FD7E714001206A1 /* WMPlayer.h */,
+				6396AC6C1FD7E714001206A1 /* WMPlayer.m */,
+			);
+			path = WMPlayer;
 			sourceTree = "<group>";
 		};
 		639A9F7A1FD555E20007C156 = {
@@ -272,6 +297,10 @@
 		639A9FC21FD566DB0007C156 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6396AC6A1FD7E6FB001206A1 /* WMPlayer */,
+				6396AC651FD7CB1E001206A1 /* videoCell.h */,
+				6396AC661FD7CB1E001206A1 /* videoCell.m */,
+				6396AC671FD7CB1E001206A1 /* videoCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -393,6 +422,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				639A9FDF1FD594E00007C156 /* Main.storyboard in Resources */,
+				6396AC721FD7F1D4001206A1 /* FastForwardView.xib in Resources */,
+				6396AC691FD7CB1E001206A1 /* videoCell.xib in Resources */,
 				639A9F931FD555E20007C156 /* LaunchScreen.storyboard in Resources */,
 				639A9F901FD555E20007C156 /* Assets.xcassets in Resources */,
 			);
@@ -474,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				639A9FDA1FD589FB0007C156 /* SidModel.m in Sources */,
+				6396AC681FD7CB1E001206A1 /* videoCell.m in Sources */,
 				639A9FDD1FD5908E0007C156 /* RootTabBarController.m in Sources */,
 				6396AC641FD7A4AF001206A1 /* SinaNewsViewController.m in Sources */,
 				639A9FC41FD566DB0007C156 /* AppDelegate.m in Sources */,
@@ -482,9 +514,11 @@
 				639A9FCE1FD56E110007C156 /* BaseNavViewController.m in Sources */,
 				639A9F961FD555E20007C156 /* main.m in Sources */,
 				639A9FD11FD57BC80007C156 /* ScreenShotView.m in Sources */,
+				6396AC6D1FD7E714001206A1 /* WMPlayer.m in Sources */,
 				639A9FC81FD568560007C156 /* UIViewController+GestureStateBlock.m in Sources */,
 				639A9FD71FD589A20007C156 /* VideoModel.m in Sources */,
 				6396AC601FD79A40001206A1 /* TencentNewsViewController.m in Sources */,
+				6396AC711FD7F1D4001206A1 /* FastForwardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

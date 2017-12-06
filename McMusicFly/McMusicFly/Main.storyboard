@@ -99,6 +99,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="腾讯视频" id="ZA5-13-gS4"/>
+                    <connections>
+                        <outlet property="tbViiew" destination="xdR-c2-bMX" id="bKc-GK-vRO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Age-x6-iBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
