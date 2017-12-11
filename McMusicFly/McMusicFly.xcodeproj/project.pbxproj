@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2798EC9853139C8B23D0A37E /* libPods-McMusicFly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D02C98D3A5A6FD407172A51 /* libPods-McMusicFly.a */; };
+		6301C3D91FDD48030042C9EF /* WMLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6301C3D81FDD48030042C9EF /* WMLightView.m */; };
 		6396AC601FD79A40001206A1 /* TencentNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396AC5F1FD79A40001206A1 /* TencentNewsViewController.m */; };
 		6396AC641FD7A4AF001206A1 /* SinaNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396AC631FD7A4AF001206A1 /* SinaNewsViewController.m */; };
 		6396AC681FD7CB1E001206A1 /* videoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6396AC661FD7CB1E001206A1 /* videoCell.m */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6301C3D71FDD48030042C9EF /* WMLightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLightView.h; sourceTree = "<group>"; };
+		6301C3D81FDD48030042C9EF /* WMLightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLightView.m; sourceTree = "<group>"; };
 		6396AC5E1FD79A40001206A1 /* TencentNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TencentNewsViewController.h; sourceTree = "<group>"; };
 		6396AC5F1FD79A40001206A1 /* TencentNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TencentNewsViewController.m; sourceTree = "<group>"; };
 		6396AC621FD7A4AF001206A1 /* SinaNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinaNewsViewController.h; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 				6396AC6F1FD7F1D4001206A1 /* FastForwardView.xib */,
 				6396AC6B1FD7E714001206A1 /* WMPlayer.h */,
 				6396AC6C1FD7E714001206A1 /* WMPlayer.m */,
+				6301C3D71FDD48030042C9EF /* WMLightView.h */,
+				6301C3D81FDD48030042C9EF /* WMLightView.m */,
 			);
 			path = WMPlayer;
 			sourceTree = "<group>";
@@ -519,6 +524,7 @@
 				639A9FD71FD589A20007C156 /* VideoModel.m in Sources */,
 				6396AC601FD79A40001206A1 /* TencentNewsViewController.m in Sources */,
 				6396AC711FD7F1D4001206A1 /* FastForwardView.m in Sources */,
+				6301C3D91FDD48030042C9EF /* WMLightView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

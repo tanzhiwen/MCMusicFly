@@ -28,8 +28,37 @@ typedef NS_ENUM(NSInteger, CloseBtnStyle){
     CloseBtnStyleClose  //关闭（X）
 };
 
-@protocol WMPlayerDelegate
+// 手势操作的类型
+typedef NS_ENUM(NSInteger,WMControlType){
+    progressControl, // 视频进度调节的操作
+    voiceControl,  //声音调节的操作
+    lightControl, //亮度调节的操作
+    noneControl
+};
 
+@class WMPlayer;
+@protocol WMPlayerDelegate<NSObject>
+@optional
+///播放器事件
+//点击播放暂停按钮代理方法
+-(void)wmplayer:(WMPlayer *)wmplayer clickedPlayOrPauseButton:(UIButton *)playOrPauseBtn;
+//点击关闭按钮代理方法
+-(void)wmplayer:(WMPlayer *)wmplayer clickedCloseButton:(UIButton *)closeBtn;
+//点击全屏按钮代理方法
+-(void)wmplayer:(WMPlayer *)wmplayer clickedFullScreenButton:(UIButton *)fullScreenBtn;
+//单击WMPlayer的代理方法
+-(void)wmplayer:(WMPlayer *)wmplayer singleTaped:(UITapGestureRecognizer *)singleTap;
+//双击WMPlayer的代理方法
+-(void)wmplayer:(WMPlayer *)wmplayer doubleTaped:(UITapGestureRecognizer *)doubleTap;
+//WMPlayer的的操作栏隐藏和显示
+-(void)wmplayer:(WMPlayer *)wmplayer isHiddenTopAndBottomView:(BOOL )isHidden;
+///播放状态
+//播放失败的代理方法
+-(void)wmplayerFailedPlay:(WMPlayer *)wmplayer WMPlayerStatus:(WMPlayerState)state;
+//准备播放的代理方法
+-(void)wmplayerReadyToPlay:(WMPlayer *)wmplayer WMPlayerStatus:(WMPlayerState)state;
+//播放完毕的代理方法
+-(void)wmplayerFinishedPlay:(WMPlayer *)wmplayer;
 
 @end
 
@@ -52,7 +81,14 @@ typedef NS_ENUM(NSInteger, CloseBtnStyle){
  *  顶部操作工具栏
  */
 @property (nonatomic,strong ) UIImageView *topView;
-
+/**
+ *  是否使用手势控制音量
+ */
+@property (nonatomic,assign) BOOL  enableVolumeGesture;
+/**
+ *  是否使用手势控制音量
+ */
+@property (nonatomic,assign) BOOL  enableFastForwardGesture;
 /**
  *  显示播放视频的title
  */
@@ -122,8 +158,34 @@ typedef NS_ENUM(NSInteger, CloseBtnStyle){
 /** 播放前占位图片，不设置就显示默认占位图（需要在设置视频URL之前设置） */
 @property (nonatomic, strong) UIImage  *placeholderImage ;
 
+/**
+ 播放
+ */
+-(void)play;
 
+/**
+ 暂停
+ */
+-(void)pause;
 
+/**
+ 获取当前播放的时间点
+ */
+- (double)currentTime;
 
+/**
+ 重置播放器
+ */
+-(void)resetWMPlayer;
+
+/**
+ 获取版本号
+ */
+-(void)version;
+
+/**
+ 获取当前的选取状态
+ */
++(CGAffineTransform)getCurrentDeviceOrigination;
 
 @end
